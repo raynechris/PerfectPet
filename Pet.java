@@ -17,14 +17,14 @@ class Main {
     System.out.println("Enter your name:");
     String name = (myObj.nextLine()).toLowerCase();
 
-    if (!("winterspringsummerfall".indexOf(season) >= 0)) {
+    if (!season.equals("fall") && !season.equals("summer") && !season.equals("winter") && !season.equals("spring")) {
       // this is not a valid season
       System.out.println("Please enter a valid season.");
       return;
     }
 
-    if (!("redbluegreen".indexOf(color.substring(0).toLowerCase()) >= 0)) {
-      // this is not a color given
+    if (!color.equals("red") && !color.equals("blue") && !color.equals("green")) {
+      // this is not a valid color
       System.out.println("Please enter a valid color.");
       return;
     }
